@@ -1,10 +1,16 @@
 package extend.practice;
 
 public class Oak extends Monster{
-	protected String name = "オーク";
-	protected int hp = 200;
-	protected int offensive = 20;
+	protected String name;
+	protected int hp;
+	protected int offensive;
 
+	public Oak() {
+		this.name = "オーク";
+		this.hp = 200;
+		this.offensive = 20;
+	}
+	
 	@Override
 	public void attack(Living target) {
 		int damage = this.offensive * Rand.get(10);

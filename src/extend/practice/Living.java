@@ -7,8 +7,6 @@ public abstract class Living {
 
 	abstract void attack(Living target); //ターゲットに攻撃するメソッド
 	abstract String getName();
-	public int setHp(int damage) {
-		return this.hp-=damage;
-	}
+	abstract int setHp(int damage);
 	abstract int getHp();
 }

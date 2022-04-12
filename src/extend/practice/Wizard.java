@@ -1,9 +1,15 @@
 package extend.practice;
 
 public class Wizard extends Human{
-	protected String name = "魔法使い";
-	protected int hp = 200;
-	protected int offensive = 30;
+	protected String name;
+	protected int hp;
+	protected int offensive;
+	
+	public Wizard() {
+		this.name = "魔法使い";
+		this.hp = 200;
+		this.offensive = 30;
+	}
 	
 	@Override
 	public void attack(Living target) {

@@ -1,10 +1,15 @@
 package extend.practice;
 
 public class Fighter extends Human{
-	protected String name = "戦士";
-	protected int hp = 200;
-	protected int offensive = 40;
+	protected String name;
+	protected int hp;
+	protected int offensive;
 	
+	public Fighter() {
+		this.name = "戦士";
+		this.hp = 200;
+		this.offensive = 40;
+	}
 	@Override
 	public void attack(Living target) {
 		int damage = this.offensive * Rand.get(10);

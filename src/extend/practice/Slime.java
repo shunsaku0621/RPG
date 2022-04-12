@@ -1,10 +1,16 @@
 package extend.practice;
 
 public class Slime extends Monster{
-	protected String name = "スライム";
-	protected int hp = 200;
-	protected int offensive = 30;
+	protected String name;
+	protected int hp;
+	protected int offensive;
 
+	public Slime() {
+		this.name = "スライム";
+		this.hp = 200;
+		this.offensive = 30;
+	}
+	
 	@Override
 	public void attack(Living target) {
 		int damage = this.offensive * Rand.get(10);
