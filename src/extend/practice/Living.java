@@ -6,7 +6,7 @@ public abstract class Living {
 	protected int offensive; //攻撃力
 
 	abstract void attack(Living target); //ターゲットに攻撃するメソッド
-	abstract String getName();
-	abstract int setHp(int damage);
-	abstract int getHp();
+//	abstract String getName();
+//	abstract int setHp(int damage);
+//	abstract int getHp();
 }

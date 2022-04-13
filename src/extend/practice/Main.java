@@ -22,7 +22,7 @@ public class Main {
 			humanList.get(Rand.get(humanList.size())).attack(monsterList.get(Rand.get(monsterList.size())));
 			for(int j = 0; j < monsterList.size(); j++) {
 //				System.out.println(monsterList.get(j).getHp());
-				if(monsterList.get(j).getHp() <= 0) {
+				if(monsterList.get(j).hp <= 0) {
 					monsterList.remove(j);
 				}
 			}
@@ -39,7 +39,7 @@ public class Main {
 			monsterList.get(Rand.get(monsterList.size())).attack(humanList.get(Rand.get(humanList.size())));
 			for(int s = 0; s < humanList.size(); s++) {
 //				System.out.println(humanList.get(s).getHp());
-				if(humanList.get(s).getHp() <= 0) {
+				if(humanList.get(s).hp <= 0) {
 					humanList.remove(s);
 				}
 			}	
